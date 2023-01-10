@@ -1,0 +1,4 @@
+"id, login, password, role"
+"1, test, $2a$12$QfLPDhEY2oSlBzljx1P5gurANELS8hUgh3ry5EeJy9nwhUaVN/v72, user"
+"2, admin, $2a$12$i9mO5s5Z95eX8tX.R93RPOO4HIh/Bt4KhjW.FkGVhQilPHh/UkH7O, admin"
+"3, booking_com, $2a$12$TypmfgLjZ85xCSN9a4jXfOBKx2cuMjNW8jqrW1Pj.AgIg6h1GZUCe, api"

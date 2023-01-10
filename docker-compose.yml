@@ -1,0 +1,25 @@
+services:
+  db:
+    platform: linux/x86_64
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345678q!
+      MYSQL_DATABASE: Booking
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 12345678q!
+    ports:
+      - 3306:3306
+
+  booking:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    links:
+      - db
+    ports:
+      - 8095:8095
+
+
+
+
